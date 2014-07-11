@@ -25,6 +25,8 @@ public class ControlWindow extends JFrame {
 	private JTextField tfTempo;
 	private JButton btnLoadFiles = new JButton("Find Media Files");
 	private JLabel lblInfo;
+	private static int iWindowHeight = 440;
+	private static int iWindowWidth = 240;
 
 
 	/**
@@ -33,29 +35,30 @@ public class ControlWindow extends JFrame {
 	public ControlWindow() {
 		setTitle("Vidcheroo");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 250, 450);
+		setBounds(20, 80, iWindowWidth, iWindowHeight);
+		setResizable(false);
 		contentPane = new JPanel();
 		contentPane.setBackground(Color.DARK_GRAY);
-		contentPane.setBounds(new Rectangle(20, 20, 250, 450));
+		contentPane.setBounds(new Rectangle(20, 20, iWindowWidth, iWindowHeight));
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
 		JPanel panelRun = new JPanel();
 		panelRun.setBackground(new Color(51, 51, 51));
-		panelRun.setBounds(0, 0, 234, 80);
+		panelRun.setBounds(0, 0, iWindowWidth, 80);
 		contentPane.add(panelRun);
 		panelRun.setLayout(null);
 		
 		JPanel panelFiles = new JPanel();
 		panelFiles.setBackground(new Color(51, 51, 51));
-		panelFiles.setBounds(0, 309, 234, 80);
+		panelFiles.setBounds(0, 309, iWindowWidth, 80);
 		contentPane.add(panelFiles);
 		panelFiles.setLayout(null);
 		
 		JPanel panelStatus = new JPanel();
 		panelStatus.setBackground(Color.BLACK);
-		panelStatus.setBounds(0, 388, 234, 23);
+		panelStatus.setBounds(0, 388, iWindowWidth, 23);
 		contentPane.add(panelStatus);
 		panelStatus.setLayout(null);
 		
