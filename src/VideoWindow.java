@@ -34,7 +34,7 @@ public class VideoWindow extends JFrame {
 		
 		// Initialise the VLC Player.
 		// TODO: Read this value from settings.
-		setVlcPath("C:\\Program Files\\VLC");
+		setVlcPath("/Applications/VLC.app/Contents/MacOS/lib");
 		
 		// Initialise the four VideoCanvas and add them to this JFrame.
 		for (int i = 0; i < numberOfInstances; i++) {

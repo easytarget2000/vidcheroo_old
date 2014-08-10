@@ -7,7 +7,7 @@ public class FileLoader {
 	private ArrayList<String> filePathList = new ArrayList<>();
 	
 	public FileLoader() {
-		loadFileList("C:\\Users\\Michel\\Projekte\\VIDCHEROO\\FEED\\");
+		loadFileList("/Users/michel/Projekte/Vidcheroo/feed");
 	}
 	
 	public void loadFileList(String mediaDirectory) {
